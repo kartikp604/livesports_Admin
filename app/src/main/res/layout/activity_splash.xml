@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:layout_width="159dp"
+        android:layout_height="273dp"
+        android:src="@drawable/newsplash" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="338dp"
+        android:layout_height="35dp"
+        android:indeterminateDrawable="@drawable/cpb_1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:text="  Please Wait.."/>
+    <!--        android:indeterminateDrawable="@drawable/cpb_1"-->
+</LinearLayout>

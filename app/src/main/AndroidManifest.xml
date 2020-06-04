@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.livesportsadmin">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OtherGamePdfActivity"></activity>
+        <activity
+            android:name=".WebNotificationActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".TeamPlayerApprovalActivity"
+            android:parentActivityName=".GameTeamAproovalActivity" />
+        <activity
+            android:name=".GameTeamAproovalActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".CricketTeamApprovalActivity"
+            android:parentActivityName=".GameTeamAproovalActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddCricketScheduleActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".CricketCaptianRequestActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".RegOnOffActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".KabaddiRulesActivity"
+            android:parentActivityName=".RulesActivity" />
+        <activity
+            android:name=".VolleyballRulesActivity"
+            android:parentActivityName=".RulesActivity" />
+        <activity
+            android:name=".ChessRulesActivity"
+            android:parentActivityName=".RulesActivity" />
+        <activity
+            android:name=".CricketRulesActivity"
+            android:parentActivityName=".RulesActivity" />
+        <activity
+            android:name=".RulesActivity"
+            android:parentActivityName=".HomeActivity" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.actions" -->
+        <!-- android:resource="@xml/option_menu_actions" /> -->
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity">
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ScorerMainActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".WinGameReportActivity"/>
+
+    <activity android:name=".BallerActivity"/>
+        <activity android:name=".BatsActivity"/>
+    </application>
+
+</manifest>

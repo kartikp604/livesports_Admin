@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:layout_margin="15dp"
+    tools:context=".AddCricketScheduleActivity">
+    <TextView
+        android:id="@+id/titleSchedule"
+        android:textAlignment="center"
+        android:text=" Cricket Schedule "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"/>
+
+    <Spinner
+        android:id="@+id/selectGameforSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <Spinner
+        android:id="@+id/Team1sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+    <Spinner
+        android:id="@+id/Team2sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+    <Button
+       android:id="@+id/btnSelectDate"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Select Date "/>
+    <TextView
+        android:id="@+id/txtViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+
+        <Button
+            android:id="@+id/btnSelectTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Select Time  " />
+
+    <TextView
+        android:id="@+id/txtViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/criLocation"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location:"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/criSchUpdBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"/>
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_gravity="right"
+
+        android:src="@drawable/ic_refresh_black_24dp" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="right"
+        >
+
+
+
+        <ListView
+            android:id="@+id/listView_Cricket_Schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

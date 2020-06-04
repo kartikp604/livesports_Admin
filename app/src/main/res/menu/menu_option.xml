@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/LogOut"
+        android:orderInCategory="02"
+        android:title="LogOut"
+        android:icon="@drawable/ic_remove_circle_outline_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Home"
+        android:orderInCategory="01"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="never"/>
+</menu>
